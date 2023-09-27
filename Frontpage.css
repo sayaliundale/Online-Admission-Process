@@ -2,27 +2,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 
 header {
-  height: 9rem;
-  width: auto;
+  height: auto;
+  /*width: auto;*/
   display: flex;
   padding: 0.5rem;
 }
+.headerfelx {
+  position: relative;
+  top: 0rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 0 7rem;
+}
+
 #pccoerlogo img {
   width: 7rem;
   height: 7rem;
-  margin-left: 9rem;
+
+  margin-top: -0.5rem;
 }
 #pcetlogo img {
   width: 7rem;
   height: 7rem;
-  margin-right: 10rem;
 }
 
 .college {
   text-align: center;
-  width: 70rem;
-  line-height: 0.5rem;
+
+  line-height: 1.7rem;
   margin-top: -0.5rem;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 #pcet,
@@ -31,23 +43,26 @@ header {
   font-size: 1.3rem;
   letter-spacing: 0.5px;
   font-family: "Poppins", sans-serif;
+}
+#pcet {
   margin-top: 1rem;
 }
 
 #description,
 #description1 {
-  width: 50rem;
+  width: auto;
   display: flex;
   justify-content: center;
   line-height: 1rem;
-  margin-top: -0.7rem;
+  margin-top: -1rem;
   letter-spacing: 0.5px;
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
-  margin-left: 9rem;
+  padding: 0 5rem;
 }
 #description1 {
   margin-top: -0.5rem;
+  margin-bottom: 2rem;
 }
 
 #college_name {
@@ -55,11 +70,14 @@ header {
   font-weight: bold;
   letter-spacing: 0.5px;
   font-family: "Poppins", sans-serif;
+  margin-top: -1rem;
 }
+
 .nav {
   height: 2.5rem;
+  width: auto;
   background-color: rgb(103, 201, 246);
-  margin-top: -1rem;
+  margin-top: -1.5rem;
   display: flex;
   justify-content: center;
 }
@@ -81,7 +99,7 @@ header {
 }
 .nav li:hover {
   background-color: #0d68c4;
-  height:auto;
+  height: auto;
 }
 .announcements {
   background-color: white;
@@ -134,121 +152,88 @@ header {
     transform: translateX(-100%);
   }
 }
-#welcome {
-  width: 15rem;
-  height: 5rem;
-  font-size: 2rem;
-  font-family: sans-serif;
-  text-align: center;
-  position: absolute;
-  top: 16rem;
-  margin-left: 42rem;
-  color: white;
-  font-weight: bold;
-}
 
 #pccoer-img img {
   width: 100%;
   height: 38rem;
   object-fit: fill;
 }
-@media screen and (max-width: 414px) {
-    header {
-      
-      height: auto;
-      flex-direction: column;
-    }
-    
-    #pccoerlogo img {
-      width: 6rem;
-      height: 6rem;
-      position: relative;
-      right: 0rem;
-    }
-  
-    #pcet {
-      font-size: 1rem;
-      position: absolute;
-     
-     left:3rem;
-    }
-    .college{
-        width:auto;
-    }
-    #college_name {
-      position: relative;
-      left:-1rem;
-      top: 0.5rem;
-      font-weight: bolder;
-      width: 23rem;
-      height: 10rem;
-      font-size: 1.3rem;
-      padding: 1rem;
-      line-height: 1.5rem;
-    }
-    
-    #description, #description1 {
-      position: relative;
-      right: 9rem;
-      width: 23rem;
-      height: 10rem;
-      top: -7.5rem;
-      line-height: 0.8rem;
-      font-size: 0.6em;
-    }
-    
-    #description1 {
-      margin-top: -7rem;
-     
-    }
-    
-    #pcetlogo {
-      position: absolute;
-      top: 18.5rem;
-      left: 9rem;
-      width:5rem;
-      height:5rem;
-    }
-    
-    .nav {
-      margin-top: -8rem;
-      height: 1.7rem;
-      width: 25rem;
-    }
-    
-    .nav ul {
-      font-size: 0.8rem;
-    }
-   
-    .a1 {
-      width: 8rem;
-      font-size: 0.8rem;
-      position: relative;
-      padding-left: 1rem;
-      
-    }
-    .announcements{
-      height:1.7rem;
-    }
-    .a2 {
-      position: relative;
-      right: 0rem;
-      width: 23rem;
-    }
-    .a2 li{
-        margin-left: 1rem;
-        font-size: 0.7rem;
-        width:13rem;
-    }
-    #pccoer-img img {
-      width: 24.5rem;
-      height: 16rem;
-      object-fit: fill;
-    }
-    
-    #welcome {
-      display:none;
-    }
+@media screen and (max-width: 550px) {
+  #pccoerlogo img {
+    position: relative;
+    right: 0rem;
   }
- 
+  #pcet {
+    font-size: 1rem;
+    margin-top: -1rem;
+  }
+  #college_name {
+    font-size: 1.5rem;
+  }
+  header,
+  .headerfelx {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    margin: 0 -1rem;
+  }
+  #description,
+  #description1 {
+    padding: 0 0.1rem;
+    font-size: 0.6rem;
+  }
 
+  .a1 {
+    width: 8rem;
+
+    position: relative;
+    padding-left: 1rem;
+  }
+  .announcements {
+    height: 1.7rem;
+  }
+  .a2 {
+    position: relative;
+    right: 0rem;
+    width: 23rem;
+  }
+  .a2 li {
+    margin-left: 1rem;
+
+    width: 13rem;
+  }
+
+  #pcetlogo img {
+    margin-top: -2rem;
+  }
+  .nav {
+    height: 2rem;
+
+    margin-top: 0rem;
+    justify-content: center;
+  }
+  .nav ul {
+    margin-left: -0.9rem;
+  }
+  .nav li,
+  .a1,
+  .a2 {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 1506px) {
+  .headerfelx {
+    margin: 0 1rem;
+  }
+}
+@media screen and (max-width: 1320px) {
+  #pcet {
+    font-size: 1.4rem;
+  }
+  #college_name {
+    font-size: 1.5rem;
+  }
+  .a2 li {
+    margin-left: 2rem;
+  }
+}
