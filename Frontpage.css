@@ -29,10 +29,8 @@ header {
 
 .college {
   text-align: center;
-
   line-height: 1.7rem;
   margin-top: -0.5rem;
-
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -142,6 +140,10 @@ header {
   margin-left: 5rem;
   color: #3b5999;
   margin-top: 0.5rem;
+
+}
+.a2 li a{
+  text-decoration: none;
 }
 
 @keyframes loop {
